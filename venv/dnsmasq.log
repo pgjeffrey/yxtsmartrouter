@@ -1,0 +1,614 @@
+Sep  4 04:26:28 dnsmasq[1867]: started, version 2.71 cachesize 150
+Sep  4 04:26:28 dnsmasq[1867]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-auth no-DNSSEC
+Sep  4 04:26:28 dnsmasq-dhcp[1867]: DHCP, IP range 192.168.1.100 -- 192.168.1.249, lease time 12h
+Sep  4 04:26:28 dnsmasq[1867]: using local addresses only for domain lan
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain weather.yuxintong.com.cn
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain mcnstm.trancomm.com.cn
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain wxmcn.trancomm.com.cn
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain mcnstm.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain wifi.jzlkbj.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain push.apple.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain mdt.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain aps.amap.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain map.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain wx.tenpay.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain wx.qlogo.cn
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain tbs.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain q.qlogo.cn
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain 3gimg.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain qhimage.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain weixinconf.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain imtt.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain qpic.cn
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain qpic.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain wx.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain 3g.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain weixin.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain weixin110.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: reading /tmp/resolv.conf.auto
+Sep  4 04:26:28 dnsmasq[1867]: using local addresses only for domain lan
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain weather.yuxintong.com.cn
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain mcnstm.trancomm.com.cn
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain wxmcn.trancomm.com.cn
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain mcnstm.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain wifi.jzlkbj.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain push.apple.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain mdt.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain aps.amap.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain map.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain wx.tenpay.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain wx.qlogo.cn
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain tbs.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain q.qlogo.cn
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain 3gimg.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain qhimage.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain weixinconf.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain imtt.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain qpic.cn
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain qpic.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain wx.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain 3g.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain weixin.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: using nameserver 114.114.114.114#53 for domain weixin110.qq.com
+Sep  4 04:26:28 dnsmasq[1867]: ignoring nameserver 192.168.1.1 - local interface
+Sep  4 04:26:28 dnsmasq[1867]: read /etc/hosts - 1 addresses
+Sep  4 04:26:28 dnsmasq-dhcp[1867]: read /etc/ethers - 0 addresses
+Sep  4 04:26:35 dnsmasq-dhcp[1867]: DHCPDISCOVER(br-lan) 00:e0:4c:6b:71:40 
+Sep  4 04:26:35 dnsmasq-dhcp[1867]: DHCPOFFER(br-lan) 192.168.1.198 00:e0:4c:6b:71:40 
+Sep  4 04:26:36 dnsmasq-dhcp[1867]: DHCPREQUEST(br-lan) 192.168.1.198 00:e0:4c:6b:71:40 
+Sep  4 04:26:36 dnsmasq-dhcp[1867]: DHCPACK(br-lan) 192.168.1.198 00:e0:4c:6b:71:40 icecreamdeMBP
+Sep  4 04:28:14 dnsmasq[1867]: exiting on receipt of SIGTERM
+Sep  4 04:28:17 dnsmasq[2291]: started, version 2.71 cachesize 150
+Sep  4 04:28:17 dnsmasq[2291]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-auth no-DNSSEC
+Sep  4 04:28:17 dnsmasq-dhcp[2291]: DHCP, IP range 192.168.1.100 -- 192.168.1.249, lease time 12h
+Sep  4 04:28:17 dnsmasq[2291]: using local addresses only for domain lan
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain weather.yuxintong.com.cn
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain mcnstm.trancomm.com.cn
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain wxmcn.trancomm.com.cn
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain mcnstm.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain wifi.jzlkbj.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain push.apple.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain mdt.qq.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain aps.amap.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain map.qq.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain wx.tenpay.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain wx.qlogo.cn
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain q.qlogo.cn
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain weixinconf.qq.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain qpic.cn
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain qpic.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain wx.qq.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain weixin.qq.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain weixin110.qq.com
+Sep  4 04:28:17 dnsmasq[2291]: reading /tmp/resolv.conf.auto
+Sep  4 04:28:17 dnsmasq[2291]: using local addresses only for domain lan
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain weather.yuxintong.com.cn
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain mcnstm.trancomm.com.cn
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain wxmcn.trancomm.com.cn
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain mcnstm.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain wifi.jzlkbj.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain push.apple.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain mdt.qq.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain aps.amap.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain map.qq.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain wx.tenpay.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain wx.qlogo.cn
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain q.qlogo.cn
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain weixinconf.qq.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain qpic.cn
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain qpic.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain wx.qq.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain weixin.qq.com
+Sep  4 04:28:17 dnsmasq[2291]: using nameserver 114.114.114.114#53 for domain weixin110.qq.com
+Sep  4 04:28:17 dnsmasq[2291]: ignoring nameserver 192.168.1.1 - local interface
+Sep  4 04:28:17 dnsmasq[2291]: read /etc/hosts - 1 addresses
+Sep  4 04:28:17 dnsmasq[2291]: read /tmp/hosts/dhcp - 0 addresses
+Sep  4 04:28:17 dnsmasq-dhcp[2291]: read /etc/ethers - 0 addresses
+Sep  4 04:28:37 dnsmasq[2291]: query[AAAA] loopback from 127.0.0.1
+Sep  4 04:28:37 dnsmasq[2291]: config loopback is NODATA-IPv6
+Sep  4 04:28:37 dnsmasq[2291]: query[A] loopback from 127.0.0.1
+Sep  4 04:28:37 dnsmasq[2291]: config loopback is 127.0.0.1
+Sep  4 04:30:02 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:30:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 04:30:02 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 04:30:02 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:30:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 04:30:02 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 04:31:36 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:31:36 dnsmasq[2291]: cached wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 04:31:36 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:31:36 dnsmasq[2291]: cached wifi.jzlkbj.com is 59.110.224.137
+Sep  4 04:33:25 dnsmasq-dhcp[2291]: DHCPDISCOVER(br-lan) cc:fa:00:aa:38:ae 
+Sep  4 04:33:25 dnsmasq-dhcp[2291]: DHCPOFFER(br-lan) 192.168.1.158 cc:fa:00:aa:38:ae 
+Sep  4 04:33:25 dnsmasq-dhcp[2291]: DHCPREQUEST(br-lan) 192.168.1.158 cc:fa:00:aa:38:ae 
+Sep  4 04:33:25 dnsmasq-dhcp[2291]: DHCPACK(br-lan) 192.168.1.158 cc:fa:00:aa:38:ae android-664d8b768f805380
+Sep  4 04:33:25 dnsmasq[2291]: query[AAAA] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:25 dnsmasq[2291]: config connectivitycheck.gstatic.com is NODATA-IPv6
+Sep  4 04:33:25 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:25 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:33:25 dnsmasq[2291]: query[A] pms.mb.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:25 dnsmasq[2291]: config pms.mb.qq.com is 127.0.0.1
+Sep  4 04:33:25 dnsmasq[2291]: query[A] pms.mb.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:25 dnsmasq[2291]: config pms.mb.qq.com is 127.0.0.1
+Sep  4 04:33:25 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:25 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 04:33:25 dnsmasq[2291]: query[A] clients3.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:25 dnsmasq[2291]: config clients3.google.com is 127.0.0.1
+Sep  4 04:33:25 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:25 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 04:33:25 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:25 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 04:33:25 dnsmasq[2291]: query[A] szlong.weixin.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:25 dnsmasq[2291]: forwarded szlong.weixin.qq.com to 114.114.114.114
+Sep  4 04:33:25 dnsmasq[2291]: reply szlong.weixin.qq.com is 14.215.158.119
+Sep  4 04:33:25 dnsmasq[2291]: reply szlong.weixin.qq.com is 113.96.209.106
+Sep  4 04:33:25 dnsmasq[2291]: reply szlong.weixin.qq.com is 183.3.234.107
+Sep  4 04:33:25 dnsmasq[2291]: reply szlong.weixin.qq.com is 113.96.202.105
+Sep  4 04:33:25 dnsmasq[2291]: reply szlong.weixin.qq.com is 183.3.224.139
+Sep  4 04:33:25 dnsmasq[2291]: reply szlong.weixin.qq.com is 113.96.209.105
+Sep  4 04:33:25 dnsmasq[2291]: reply szlong.weixin.qq.com is 113.96.202.106
+Sep  4 04:33:25 dnsmasq[2291]: reply szlong.weixin.qq.com is 14.215.158.102
+Sep  4 04:33:25 dnsmasq[2291]: reply szlong.weixin.qq.com is 183.3.224.146
+Sep  4 04:33:25 dnsmasq[2291]: reply szlong.weixin.qq.com is 183.3.234.102
+Sep  4 04:33:25 dnsmasq[2291]: query[A] play.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:25 dnsmasq[2291]: config play.googleapis.com is 127.0.0.1
+Sep  4 04:33:28 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:28 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:33:29 dnsmasq[2291]: query[A] dns.weixin.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:29 dnsmasq[2291]: forwarded dns.weixin.qq.com to 114.114.114.114
+Sep  4 04:33:29 dnsmasq[2291]: reply dns.weixin.qq.com is 123.151.10.172
+Sep  4 04:33:29 dnsmasq[2291]: reply dns.weixin.qq.com is 101.226.211.106
+Sep  4 04:33:29 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:29 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 04:33:32 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:32 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:33:35 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:35 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 04:33:40 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:40 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:33:45 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:45 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 04:33:52 dnsmasq[2291]: query[A] mp.weixin.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:52 dnsmasq[2291]: config mp.weixin.qq.com is 0.0.0.1
+Sep  4 04:33:56 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:33:56 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:34:08 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:34:08 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 04:34:08 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:34:08 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 04:34:28 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:34:28 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:35:26 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:35:26 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 04:35:32 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:35:32 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:35:54 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:35:54 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 04:35:55 dnsmasq[2291]: query[A] android.clients.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:35:55 dnsmasq[2291]: config android.clients.google.com is 127.0.0.1
+Sep  4 04:36:36 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:36:36 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 04:36:36 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 04:36:36 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:36:36 dnsmasq[2291]: cached wifi.jzlkbj.com is 59.110.224.137
+Sep  4 04:36:50 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:36:50 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:37:40 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:37:40 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:37:50 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:37:50 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:38:50 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:38:50 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:39:23 dnsmasq-dhcp[2291]: DHCPDISCOVER(br-lan) cc:fa:00:aa:38:ae 
+Sep  4 04:39:23 dnsmasq-dhcp[2291]: DHCPOFFER(br-lan) 192.168.1.158 cc:fa:00:aa:38:ae 
+Sep  4 04:39:23 dnsmasq-dhcp[2291]: DHCPREQUEST(br-lan) 192.168.1.158 cc:fa:00:aa:38:ae 
+Sep  4 04:39:23 dnsmasq-dhcp[2291]: DHCPACK(br-lan) 192.168.1.158 cc:fa:00:aa:38:ae android-664d8b768f805380
+Sep  4 04:39:23 dnsmasq[2291]: query[AAAA] connectivitycheck.gstatic.com from 192.168.1.158
+Sep  4 04:39:23 dnsmasq[2291]: config connectivitycheck.gstatic.com is NODATA-IPv6
+Sep  4 04:39:23 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from 192.168.1.158
+Sep  4 04:39:23 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:39:23 dnsmasq[2291]: query[A] www.google.com from 192.168.1.158
+Sep  4 04:39:23 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 04:39:23 dnsmasq[2291]: query[A] mtalk.google.com from 192.168.1.158
+Sep  4 04:39:23 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 04:39:23 dnsmasq[2291]: query[A] clients3.google.com from 192.168.1.158
+Sep  4 04:39:23 dnsmasq[2291]: config clients3.google.com is 127.0.0.1
+Sep  4 04:39:24 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from 192.168.1.158
+Sep  4 04:39:24 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:39:26 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:39:26 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:39:30 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:39:30 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:39:38 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:39:38 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:39:54 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:39:54 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:40:02 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:40:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 04:40:02 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 04:40:02 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:40:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 04:40:02 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 04:40:26 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:40:26 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:40:37 dnsmasq[2291]: query[A] mmbiz.qpic.cn from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:40:37 dnsmasq[2291]: forwarded mmbiz.qpic.cn to 114.114.114.114
+Sep  4 04:40:37 dnsmasq[2291]: reply mmbiz.qpic.cn is <CNAME>
+Sep  4 04:40:37 dnsmasq[2291]: reply mmbiz.qpic.tc.qq.com is <CNAME>
+Sep  4 04:40:37 dnsmasq[2291]: reply mmbiz.qpic.tcdn.qq.com is <CNAME>
+Sep  4 04:40:37 dnsmasq[2291]: reply ssd.tcdn.qq.com is 182.150.10.139
+Sep  4 04:40:37 dnsmasq[2291]: reply ssd.tcdn.qq.com is 118.112.11.101
+Sep  4 04:40:37 dnsmasq[2291]: reply ssd.tcdn.qq.com is 119.147.83.60
+Sep  4 04:40:37 dnsmasq[2291]: reply ssd.tcdn.qq.com is 118.112.22.184
+Sep  4 04:41:30 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:41:30 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:41:36 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:41:36 dnsmasq[2291]: cached wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 04:41:36 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:41:36 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 04:41:37 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 04:42:36 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:42:36 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 04:42:36 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:42:36 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:42:45 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:42:45 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 04:43:05 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:43:05 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 04:43:39 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:43:39 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:44:08 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:44:08 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 04:44:08 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:44:08 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 04:45:26 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:45:26 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 04:46:08 dnsmasq[2291]: query[A] mmbiz.qpic.cn from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:46:08 dnsmasq[2291]: cached mmbiz.qpic.cn is <CNAME>
+Sep  4 04:46:08 dnsmasq[2291]: cached mmbiz.qpic.tc.qq.com is <CNAME>
+Sep  4 04:46:08 dnsmasq[2291]: cached mmbiz.qpic.tcdn.qq.com is <CNAME>
+Sep  4 04:46:08 dnsmasq[2291]: forwarded mmbiz.qpic.cn to 114.114.114.114
+Sep  4 04:46:08 dnsmasq[2291]: query[A] mmbiz.qpic.cn from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:46:08 dnsmasq[2291]: cached mmbiz.qpic.cn is <CNAME>
+Sep  4 04:46:08 dnsmasq[2291]: cached mmbiz.qpic.tc.qq.com is <CNAME>
+Sep  4 04:46:08 dnsmasq[2291]: forwarded mmbiz.qpic.cn to 114.114.114.114
+Sep  4 04:46:08 dnsmasq[2291]: reply mmbiz.qpic.cn is <CNAME>
+Sep  4 04:46:08 dnsmasq[2291]: reply mmbiz.qpic.tc.qq.com is <CNAME>
+Sep  4 04:46:08 dnsmasq[2291]: reply mmbiz.qpic.tcdn.qq.com is <CNAME>
+Sep  4 04:46:08 dnsmasq[2291]: reply ssd.tcdn.qq.com is 118.112.22.184
+Sep  4 04:46:08 dnsmasq[2291]: reply ssd.tcdn.qq.com is 182.150.10.139
+Sep  4 04:46:08 dnsmasq[2291]: reply ssd.tcdn.qq.com is 119.147.83.60
+Sep  4 04:46:08 dnsmasq[2291]: reply ssd.tcdn.qq.com is 118.112.11.101
+Sep  4 04:46:08 dnsmasq[2291]: reply mmbiz.qpic.cn is <CNAME>
+Sep  4 04:46:08 dnsmasq[2291]: reply mmbiz.qpic.tc.qq.com is <CNAME>
+Sep  4 04:46:08 dnsmasq[2291]: reply mmbiz.qpic.tcdn.qq.com is <CNAME>
+Sep  4 04:46:08 dnsmasq[2291]: reply ssd.tcdn.qq.com is 182.150.10.139
+Sep  4 04:46:08 dnsmasq[2291]: reply ssd.tcdn.qq.com is 119.147.83.60
+Sep  4 04:46:08 dnsmasq[2291]: reply ssd.tcdn.qq.com is 118.112.11.101
+Sep  4 04:46:08 dnsmasq[2291]: reply ssd.tcdn.qq.com is 118.112.22.184
+Sep  4 04:46:10 dnsmasq[2291]: query[A] oth.str.mdt.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:46:10 dnsmasq[2291]: forwarded oth.str.mdt.qq.com to 114.114.114.114
+Sep  4 04:46:10 dnsmasq[2291]: reply oth.str.mdt.qq.com is <CNAME>
+Sep  4 04:46:10 dnsmasq[2291]: reply game.str.mdt.qq.com is 183.36.108.31
+Sep  4 04:46:10 dnsmasq[2291]: reply game.str.mdt.qq.com is 183.57.48.33
+Sep  4 04:46:10 dnsmasq[2291]: reply game.str.mdt.qq.com is 183.36.108.26
+Sep  4 04:46:10 dnsmasq[2291]: reply game.str.mdt.qq.com is 183.36.108.32
+Sep  4 04:46:21 dnsmasq[2291]: query[A] oth.eve.mdt.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:46:21 dnsmasq[2291]: forwarded oth.eve.mdt.qq.com to 114.114.114.114
+Sep  4 04:46:21 dnsmasq[2291]: reply oth.eve.mdt.qq.com is <CNAME>
+Sep  4 04:46:21 dnsmasq[2291]: reply game.eve.mdt.qq.com is 101.226.76.166
+Sep  4 04:46:21 dnsmasq[2291]: reply game.eve.mdt.qq.com is 61.151.225.40
+Sep  4 04:46:36 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:46:36 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 04:46:37 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 04:46:37 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:46:37 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 04:46:37 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 04:47:36 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:47:36 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:47:38 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:47:38 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:47:42 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:47:42 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:47:50 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:47:50 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:47:55 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:47:55 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:49:08 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:49:08 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 04:49:08 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:49:08 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 04:50:02 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:50:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 04:50:02 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 04:50:02 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:50:02 dnsmasq[2291]: cached wifi.jzlkbj.com is 59.110.224.137
+Sep  4 04:51:36 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:51:36 dnsmasq[2291]: cached wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 04:51:36 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:51:36 dnsmasq[2291]: cached wifi.jzlkbj.com is 59.110.224.137
+Sep  4 04:52:36 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:52:36 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:54:34 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:54:34 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 04:54:35 dnsmasq[2291]: query[A] dns.weixin.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:54:35 dnsmasq[2291]: forwarded dns.weixin.qq.com to 114.114.114.114
+Sep  4 04:54:36 dnsmasq[2291]: reply dns.weixin.qq.com is 101.226.211.106
+Sep  4 04:54:36 dnsmasq[2291]: reply dns.weixin.qq.com is 123.151.10.172
+Sep  4 04:54:53 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:54:53 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:55:54 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:55:54 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:56:37 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:56:37 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 04:56:37 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 04:56:37 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 04:56:37 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 04:56:37 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 04:56:54 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:56:54 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:57:36 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:57:36 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 04:58:12 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:58:12 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 04:59:21 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:59:21 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 04:59:32 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:59:32 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 04:59:32 dnsmasq[2291]: query[A] play.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 04:59:32 dnsmasq[2291]: config play.googleapis.com is 127.0.0.1
+Sep  4 05:00:02 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:00:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:00:02 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 05:00:02 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:00:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:00:02 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 05:01:37 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:01:37 dnsmasq[2291]: cached wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 05:01:37 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:01:37 dnsmasq[2291]: cached wifi.jzlkbj.com is 59.110.224.137
+Sep  4 05:04:32 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:04:32 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 05:05:43 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:05:43 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:05:45 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:05:45 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:06:37 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:06:37 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:06:37 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 05:06:37 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:06:37 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:06:37 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 05:06:45 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:06:45 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:07:45 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:07:45 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:09:45 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:09:45 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:10:02 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:10:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:10:02 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 05:10:02 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:10:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:10:02 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 05:10:43 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:10:43 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 05:10:43 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:10:43 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:10:45 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:10:45 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:11:37 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:11:37 dnsmasq[2291]: cached wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 05:11:37 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:11:37 dnsmasq[2291]: cached wifi.jzlkbj.com is 59.110.224.137
+Sep  4 05:11:45 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:11:45 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:12:45 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:12:45 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:13:10 dnsmasq[2291]: query[A] xtra1.gpsonextra.net from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:13:10 dnsmasq[2291]: config xtra1.gpsonextra.net is 127.0.0.1
+Sep  4 05:13:10 dnsmasq[2291]: query[A] xtra2.gpsonextra.net from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:13:10 dnsmasq[2291]: config xtra2.gpsonextra.net is 127.0.0.1
+Sep  4 05:13:10 dnsmasq[2291]: query[A] xtra3.gpsonextra.net from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:13:10 dnsmasq[2291]: config xtra3.gpsonextra.net is 127.0.0.1
+Sep  4 05:13:36 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:13:36 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 05:14:45 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:14:45 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:15:43 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:15:43 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 05:15:43 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:15:43 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:15:45 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:15:45 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:16:37 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:16:37 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:16:37 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 05:16:37 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:16:37 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:16:37 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 05:16:45 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:16:45 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:17:45 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:17:45 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:19:45 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:19:45 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:20:02 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:20:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:20:02 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 05:20:02 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:20:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:20:02 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 05:20:43 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:20:43 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 05:21:37 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:21:37 dnsmasq[2291]: cached wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 05:21:37 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:21:37 dnsmasq[2291]: cached wifi.jzlkbj.com is 59.110.224.137
+Sep  4 05:25:43 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:25:43 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 05:25:43 dnsmasq[2291]: query[A] dns.weixin.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:25:43 dnsmasq[2291]: forwarded dns.weixin.qq.com to 114.114.114.114
+Sep  4 05:25:43 dnsmasq[2291]: reply dns.weixin.qq.com is 101.226.211.106
+Sep  4 05:25:43 dnsmasq[2291]: reply dns.weixin.qq.com is 123.151.10.172
+Sep  4 05:26:37 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:26:37 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:26:37 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 05:26:37 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:26:37 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:26:37 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 05:30:02 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:30:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:30:02 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 05:30:02 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:30:02 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:30:02 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 05:30:44 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:30:44 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 05:30:48 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:30:48 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:30:51 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:30:51 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:30:53 dnsmasq[2291]: query[A] vweixinthumb.tc.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:30:53 dnsmasq[2291]: config vweixinthumb.tc.qq.com is 127.0.0.1
+Sep  4 05:30:53 dnsmasq[2291]: query[A] vweixinthumb.tc.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:30:53 dnsmasq[2291]: config vweixinthumb.tc.qq.com is 127.0.0.1
+Sep  4 05:30:55 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:30:55 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:31:08 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:31:08 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:31:09 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:31:09 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:31:09 dnsmasq[2291]: query[AAAA] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:31:09 dnsmasq[2291]: config www.google.com is NODATA-IPv6
+Sep  4 05:31:09 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:31:09 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:31:26 dnsmasq[2291]: query[A] dldir1.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:31:26 dnsmasq[2291]: config dldir1.qq.com is 127.0.0.1
+Sep  4 05:31:26 dnsmasq[2291]: query[A] weixin.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:31:26 dnsmasq[2291]: forwarded weixin.qq.com to 114.114.114.114
+Sep  4 05:31:26 dnsmasq[2291]: reply weixin.qq.com is <CNAME>
+Sep  4 05:31:26 dnsmasq[2291]: reply minorshort.weixin.qq.com is 101.227.169.159
+Sep  4 05:31:26 dnsmasq[2291]: reply minorshort.weixin.qq.com is 61.151.224.41
+Sep  4 05:31:26 dnsmasq[2291]: reply minorshort.weixin.qq.com is 61.151.183.16
+Sep  4 05:31:30 dnsmasq[2291]: query[A] safebrowsing.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:31:30 dnsmasq[2291]: config safebrowsing.google.com is 127.0.0.1
+Sep  4 05:31:33 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:31:33 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:31:37 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:31:37 dnsmasq[2291]: cached wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 05:31:37 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:31:37 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:31:37 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 05:32:49 dnsmasq[2291]: query[A] . from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:32:49 dnsmasq[2291]: config . is 127.0.0.1
+Sep  4 05:32:49 dnsmasq[2291]: query[A] extshort.weixin.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:32:49 dnsmasq[2291]: forwarded extshort.weixin.qq.com to 114.114.114.114
+Sep  4 05:32:49 dnsmasq[2291]: reply extshort.weixin.qq.com is <CNAME>
+Sep  4 05:32:49 dnsmasq[2291]: reply short.weixin.qq.com is 101.226.211.44
+Sep  4 05:32:49 dnsmasq[2291]: reply short.weixin.qq.com is 101.226.211.101
+Sep  4 05:32:49 dnsmasq[2291]: reply short.weixin.qq.com is 101.89.15.101
+Sep  4 05:32:49 dnsmasq[2291]: reply short.weixin.qq.com is 101.89.15.100
+Sep  4 05:32:49 dnsmasq[2291]: reply short.weixin.qq.com is 180.163.25.140
+Sep  4 05:32:49 dnsmasq[2291]: reply short.weixin.qq.com is 180.163.25.139
+Sep  4 05:32:52 dnsmasq[2291]: query[A] dldir1.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:32:52 dnsmasq[2291]: config dldir1.qq.com is 127.0.0.1
+Sep  4 05:32:58 dnsmasq[2291]: query[A] sh2tjminorshort.weixin.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:32:58 dnsmasq[2291]: forwarded sh2tjminorshort.weixin.qq.com to 114.114.114.114
+Sep  4 05:32:58 dnsmasq[2291]: reply sh2tjminorshort.weixin.qq.com is <CNAME>
+Sep  4 05:32:58 dnsmasq[2291]: reply minorshort.weixin.qq.com is 61.151.183.16
+Sep  4 05:32:58 dnsmasq[2291]: reply minorshort.weixin.qq.com is 61.151.224.41
+Sep  4 05:32:58 dnsmasq[2291]: reply minorshort.weixin.qq.com is 101.227.169.159
+Sep  4 05:33:37 dnsmasq[2291]: query[A] mp.weixin.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:33:37 dnsmasq[2291]: config mp.weixin.qq.com is 0.0.0.1
+Sep  4 05:33:41 dnsmasq[2291]: query[A] szminorshort.weixin.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:33:41 dnsmasq[2291]: forwarded szminorshort.weixin.qq.com to 114.114.114.114
+Sep  4 05:33:41 dnsmasq[2291]: reply szminorshort.weixin.qq.com is 14.17.42.45
+Sep  4 05:33:41 dnsmasq[2291]: reply szminorshort.weixin.qq.com is 183.61.46.199
+Sep  4 05:33:41 dnsmasq[2291]: reply szminorshort.weixin.qq.com is 14.18.245.167
+Sep  4 05:33:42 dnsmasq[2291]: query[A] mmbiz.qpic.cn from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:33:42 dnsmasq[2291]: forwarded mmbiz.qpic.cn to 114.114.114.114
+Sep  4 05:33:42 dnsmasq[2291]: query[A] mmbiz.qpic.cn from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:33:42 dnsmasq[2291]: forwarded mmbiz.qpic.cn to 114.114.114.114
+Sep  4 05:33:42 dnsmasq[2291]: reply mmbiz.qpic.cn is <CNAME>
+Sep  4 05:33:42 dnsmasq[2291]: reply mmbiz.qpic.tc.qq.com is <CNAME>
+Sep  4 05:33:42 dnsmasq[2291]: reply mmbiz.qpic.tcdn.qq.com is <CNAME>
+Sep  4 05:33:42 dnsmasq[2291]: reply ssd.tcdn.qq.com is 182.150.10.139
+Sep  4 05:33:42 dnsmasq[2291]: reply ssd.tcdn.qq.com is 119.147.83.60
+Sep  4 05:33:42 dnsmasq[2291]: reply ssd.tcdn.qq.com is 118.112.22.184
+    Sep  4 05:33:42 dnsmasq[2291]: reply ssd.tcdn.qq.com is 118.112.11.101
+Sep  4 05:33:42 dnsmasq[2291]: reply mmbiz.qpic.cn is <CNAME>
+Sep  4 05:33:42 dnsmasq[2291]: reply mmbiz.qpic.tc.qq.com is <CNAME>
+Sep  4 05:33:42 dnsmasq[2291]: reply mmbiz.qpic.tcdn.qq.com is <CNAME>
+Sep  4 05:33:42 dnsmasq[2291]: reply ssd.tcdn.qq.com is 119.147.83.60
+Sep  4 05:33:42 dnsmasq[2291]: reply ssd.tcdn.qq.com is 118.112.22.184
+Sep  4 05:33:42 dnsmasq[2291]: reply ssd.tcdn.qq.com is 118.112.11.101
+Sep  4 05:33:42 dnsmasq[2291]: reply ssd.tcdn.qq.com is 182.150.10.139
+Sep  4 05:33:57 dnsmasq[2291]: query[A] connectivitycheck.gstatic.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:33:57 dnsmasq[2291]: config connectivitycheck.gstatic.com is 127.0.0.1
+Sep  4 05:34:08 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:34:08 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 05:34:13 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:34:13 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 05:34:21 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:34:21 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 05:34:34 dnsmasq[2291]: query[A] mmbiz.qpic.cn from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:34:34 dnsmasq[2291]: cached mmbiz.qpic.cn is <CNAME>
+Sep  4 05:34:34 dnsmasq[2291]: cached mmbiz.qpic.tc.qq.com is <CNAME>
+Sep  4 05:34:34 dnsmasq[2291]: cached mmbiz.qpic.tcdn.qq.com is <CNAME>
+Sep  4 05:34:34 dnsmasq[2291]: forwarded mmbiz.qpic.cn to 114.114.114.114
+Sep  4 05:34:34 dnsmasq[2291]: reply mmbiz.qpic.cn is <CNAME>
+Sep  4 05:34:34 dnsmasq[2291]: reply mmbiz.qpic.tc.qq.com is <CNAME>
+Sep  4 05:34:34 dnsmasq[2291]: reply mmbiz.qpic.tcdn.qq.com is <CNAME>
+Sep  4 05:34:34 dnsmasq[2291]: reply ssd.tcdn.qq.com is 182.150.10.139
+Sep  4 05:34:34 dnsmasq[2291]: reply ssd.tcdn.qq.com is 118.112.22.184
+Sep  4 05:34:34 dnsmasq[2291]: reply ssd.tcdn.qq.com is 118.112.11.101
+Sep  4 05:34:34 dnsmasq[2291]: reply ssd.tcdn.qq.com is 119.147.83.60
+Sep  4 05:34:34 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:34:34 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 05:34:46 dnsmasq[2291]: query[A] log.tbs.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:34:46 dnsmasq[2291]: config log.tbs.qq.com is 127.0.0.1
+Sep  4 05:34:46 dnsmasq[2291]: query[A] cfg.imtt.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:34:46 dnsmasq[2291]: config cfg.imtt.qq.com is 127.0.0.1
+Sep  4 05:34:46 dnsmasq[2291]: query[A] dldir1.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:34:46 dnsmasq[2291]: config dldir1.qq.com is 127.0.0.1
+Sep  4 05:34:49 dnsmasq[2291]: query[A] dldir1.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:34:49 dnsmasq[2291]: config dldir1.qq.com is 127.0.0.1
+Sep  4 05:34:53 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:34:53 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 05:34:53 dnsmasq[2291]: query[A] www.googleapis.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:34:53 dnsmasq[2291]: config www.googleapis.com is 127.0.0.1
+Sep  4 05:34:55 dnsmasq[2291]: query[A] dldir1.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:34:55 dnsmasq[2291]: config dldir1.qq.com is 127.0.0.1
+Sep  4 05:35:01 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:35:01 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:35:14 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:35:14 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:35:14 dnsmasq[2291]: query[AAAA] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:35:14 dnsmasq[2291]: config www.google.com is NODATA-IPv6
+Sep  4 05:35:14 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:35:14 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:35:20 dnsmasq[2291]: query[A] log.tbs.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:35:20 dnsmasq[2291]: config log.tbs.qq.com is 127.0.0.1
+Sep  4 05:35:30 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:35:30 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:35:31 dnsmasq[2291]: query[A] dldir1.qq.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:35:31 dnsmasq[2291]: config dldir1.qq.com is 127.0.0.1
+Sep  4 05:35:44 dnsmasq[2291]: query[A] mtalk.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:35:44 dnsmasq[2291]: config mtalk.google.com is 127.0.0.1
+Sep  4 05:36:08 dnsmasq[2291]: query[A] www.google.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:36:08 dnsmasq[2291]: config www.google.com is 127.0.0.1
+Sep  4 05:36:33 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:36:33 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:36:35 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:36:35 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:36:37 dnsmasq[2291]: query[AAAA] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:36:37 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:36:37 dnsmasq[2291]: reply wifi.jzlkbj.com is NODATA-IPv6
+Sep  4 05:36:37 dnsmasq[2291]: query[A] wifi.jzlkbj.com from 127.0.0.1
+Sep  4 05:36:37 dnsmasq[2291]: forwarded wifi.jzlkbj.com to 114.114.114.114
+Sep  4 05:36:37 dnsmasq[2291]: reply wifi.jzlkbj.com is 59.110.224.137
+Sep  4 05:36:39 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:36:39 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1
+Sep  4 05:36:47 dnsmasq[2291]: query[A] www.googleadservices.com from fda2:aae9:d424:0:4d1a:a64c:1d87:f613
+Sep  4 05:36:47 dnsmasq[2291]: config www.googleadservices.com is 127.0.0.1

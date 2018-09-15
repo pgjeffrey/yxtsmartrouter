@@ -1,0 +1,8833 @@
+
+#ver 2018-09-13 08:58:21
+#rule count 978
+
+config rule
+	option name 'Allow-DHCP-Renew'
+	option src 'wan'
+	option proto 'udp'
+	option dest_port '68'
+	option target 'ACCEPT'
+	option family 'ipv4'
+
+config rule
+	option name 'Allow-Ping'
+	option src 'wan'
+	option proto 'icmp'
+	option icmp_type 'echo-request'
+	option family 'ipv4'
+	option target 'ACCEPT'
+
+config rule
+	option target 'ACCEPT'
+    option src 'lan'
+	option dest 'wan'
+	option name 'allow dns'
+	option dest_port '53'
+
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow yxt'
+	option proto 'tcp'
+	option dest_ip '202.108.133.234'
+
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wxpro'
+	option proto 'tcp'
+	option dest_ip '192.168.0.1'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.209'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.217'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.161.64.124'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.176'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.30'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.29.29.29'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.217'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.125.9.22'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.17'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.228'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '17.252.204.204'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.18'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.43'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.33'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.125'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '140.207.128.111'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.224'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '222.180.167.22'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.61.38.218'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.81'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '218.98.2.101'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.77'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.245'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.149'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.207'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.22.154'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.142'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.171.124.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.52.112'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.22.172'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.150'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.208.126'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.22.156'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.161.111.119'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.17.57.189'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.97.86'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.176'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.16'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.20'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.22'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.32'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.180'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.230'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.119'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.183.44'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.26'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.36'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.192.199.149'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.56.150.221'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.159'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.80.11'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.39.81.142'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.36'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.173.82'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.39.81.32'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.34'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.72'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.125.9.19'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.148'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.222'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.39.81.142'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.75'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.129.8.150'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.147.83.60'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.100'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.241'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.39'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.87'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.148'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.72'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.87'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.251'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.237'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.166.152.106'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.247.171'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.179'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.80.11'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.105'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.224'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.51.140.141'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.208.126'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.125.110.11'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.41'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.212.28'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.150'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.12'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.29.39'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.24'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.203'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.126.122.26'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.87'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.174.218'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.246'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.228'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.39'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.202.106'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.118.100'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.106'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.222.53'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.180'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.17.114'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.81'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.87'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.224'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.105'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '157.255.174.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.14'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.21'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.111.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.146'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.33'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.221'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.125.9.24'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.183.40'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.100.102'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.146'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '153.3.222.104'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.184.166'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '112.90.77.199'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '221.193.246.66'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.226.82'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.22.104'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.77'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.108.97'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.202.99.25'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.252'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.251'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.153'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.68'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.153'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.125.110.22'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.28'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.22.170'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.10.172'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.204'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '120.204.0.149'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.208.173'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.125.9.22'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.235.167'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.61.46.199'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.141'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.202.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.145'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.24'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.11'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.38'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.62'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.100'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.173.82'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.39'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.58'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.12'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.140'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.202.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.39.81.32'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.209.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.17.117'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.223'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '222.180.167.18'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.89'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.25'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.144'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.222.55'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.18'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.52'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.160'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.139'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.32'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.206.15.22'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.29.13'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.29'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '218.98.2.101'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.169'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.169'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.36'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.149'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.247.171'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.111.105'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.248'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.41'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.161.64.103'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.91'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.161'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.39'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.253.34'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.206.15.20'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.58'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.180'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '163.177.81.141'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.38'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.248'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.31'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.77'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.241'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.245'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.16'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.52'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.206.25.146'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.35'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.100.119'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.86'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.29.16'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.96.126'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.174.219'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.223'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '163.177.83.213'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.102'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.39'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.93'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.28'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.17.119'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.71.154'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.92'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.92'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.105'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.111.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.167.104.146'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.148'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.31'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.31'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.116.137.78'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.208.173'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.167.104.150'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.151'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.17'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.170'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.139'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.102'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.18'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.59'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.72.124'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.27'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '163.177.81.139'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.209'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '153.3.222.122'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '157.255.174.105'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.174.219'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.196'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.149'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.125.110.11'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.29'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.118.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.18.245.167'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.36'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.139'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.146'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.50'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.151'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.13'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.167.104.149'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.34'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.100.119'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.74'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.156'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.202.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.154'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.12'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.25'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.26.36'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.59'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.26'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.35'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.118.100'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '157.255.174.106'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '163.177.90.57'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.125'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.156'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.161.64.13'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.202.106'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.76'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.148'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.42'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.74'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.79.102'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.93'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.34'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.183.44'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.17.114'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.247'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.166.152.106'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.61.49.200'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.139'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.124'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.156'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.39'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.155'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.91'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.108.98'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.27'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.48'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.224.41'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.22.155'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.33'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.202.99.24'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.16'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.125.9.21'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.33'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.129.8.150'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.22.104'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.52'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.17.117'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.152'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.39.81.141'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.202.105'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.167.104.146'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.226.83'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '153.3.222.120'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.247'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.116.137.78'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.235.163'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.150'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.22'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.142'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.92.114'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.17.42.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.22.174'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.221'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.101'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.47'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.253.107'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.226.86'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.235.167'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.111.106'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.115'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.100.102'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.106'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.152'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.58'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.147'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.222.53'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.141'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.201'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.13'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.243'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.29.41'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.33'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.254.21.82'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.144'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.71'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '153.3.233.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.129.8.149'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.218'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '157.255.174.106'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '153.3.222.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.232.163'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.232.104'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.124'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.87'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.221'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.73'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.29.19'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.180'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.183.44'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.71.154'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.108.97'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '222.180.167.18'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.39.81.142'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.118.101'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.11'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.202.99.23'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.155'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.18'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.141'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.43'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.41'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.50'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.29'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.97'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.119'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.31'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.140'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.25'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.21'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.18'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.37'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.201'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.39'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.184.165'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.100.119'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.87'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.202.105'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.45'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.209'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.44'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.237'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.224.41'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.235.49'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.38'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.37'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.177'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.39.81.141'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.80.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.16'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.208.174'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.80.102'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.106'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.147'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.105'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '140.207.54.47'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.57.48.33'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.13'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.221'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.241'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.96'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.31'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.159'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.20'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.141'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.112'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.80.236'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '17.252.204.134'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '17.252.204.86'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.243'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.26'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.18.245.196'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.51.8.119'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.59'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.89'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.222.55'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.176'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.72'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.251'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.141'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.15'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.92'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.245'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.43'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.33'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.68'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.152'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '120.204.0.139'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.226.85'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.13'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.166.152.106'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.169'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.183.40'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.107'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '218.98.2.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '203.205.129.102'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.22.184'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.222.56'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.212.28'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.204'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.208.126'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.43'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.23'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.115'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.73'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.231'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.18.245.245'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.12'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.45.47'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.146'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.145'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.76'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.148'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.59'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.105'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.253.34'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.246'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.141'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.196'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.48'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.231'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.153'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.17'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '140.207.189.124'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.27'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.74'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.100.102'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '153.3.222.121'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.44'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '203.205.129.102'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.145'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.139'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.66'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.151'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.18.245.201'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.40'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.34'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.20'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.254.99.144'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.173.76'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.71'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.38'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.22.173'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.76'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.27'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.56.150.221'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.208'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '218.98.1.14'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.37'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.106'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.146'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.153'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.203'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.139'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.183.45'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.209.105'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.17'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.22'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.32'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.107'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.139'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.91'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.35'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '222.180.167.22'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '17.252.204.205'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.28.252.3'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '157.255.174.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.29'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.39.81.141'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.232.103'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.102'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.242'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.80.107'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.119'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.160'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.43'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.152'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.115'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.102'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.43'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.13'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.230'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.137.124'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '106.15.181.187'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.100.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.15'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.41'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.253.107'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.176'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.112'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '218.98.1.16'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.161'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.154'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.116.137.78'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.70'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '163.177.81.141'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '153.3.222.123'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.70'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.87'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.26'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.40'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.39'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.21'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.254.99.144'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.186.125'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.140'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.125.9.24'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.35'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.118.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.17.119'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.22.171'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.26'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.112'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.26'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.22'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.100.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.137.124'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.125'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.17'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.184.165'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.183.45'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.22.104'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.159'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.105'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.35'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.212.28'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.63.221'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.50'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.208.173'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.71'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.232'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.39'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.242'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.249.243.39'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.43'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.183.16'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.96.155'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.166.152.105'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.22.184'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.27'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '163.177.81.141'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.17'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.125'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.146'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.249.243.187'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.140'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.106'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.140'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.166.152.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.235.119'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.111.105'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '157.255.174.105'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.81'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.235.49'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.44'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.73'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.107'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.166.152.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.208.174'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.18'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.26'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.144'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.221'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.15'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.77'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.254.99.144'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '110.185.115.173'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.93'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.75'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.66'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.202.106'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.227.143.28'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.36.108.31'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.203'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.18'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.35'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.92'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.148'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.183.45'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.162'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.92'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.201'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.96.34'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.254.21.82'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.101'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.166.152.105'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.108.97'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.87'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.160'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.79'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.222.56'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.149'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.231'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.108.98'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.232.173'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '163.177.81.144'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.177'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.28'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.21'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.160'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.116.65'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '203.205.129.102'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.11'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.209.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '153.3.222.103'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.38'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.46'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.157'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.14'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.139'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.107'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.17.119'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.169'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.36'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.80.11'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.174.218'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.80.102'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.50'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.35'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.102'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.73'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.161'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.226.84'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.37'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.253.34'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.236'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.27'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.17.117'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.129.8.149'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.37'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.144'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '163.177.81.146'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.235.104'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.17.42.45'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.167.104.149'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.18'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.15'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.161'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.173.76'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.111.106'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.12'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.126.122.29'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.147.83.60'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.12'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.188'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.12'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.141'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.106'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.254.21.82'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.20'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.133.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.176'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.225.40'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.51.140.139'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '157.255.174.106'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '140.207.135.125'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.29'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.230'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.152'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.169'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.140'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.13'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.151'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.15'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.107'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.66'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.246'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '163.177.81.146'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.238'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.37'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.227.169.159'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.97'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.179'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.228'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.11.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.149'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.43'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.204'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.184.166'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.176'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.22'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.26'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.139'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.16'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.140'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.39'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.180'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.235.167'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.102'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.29.32'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.96'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.157'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '218.98.1.15'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.155'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.149'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.16'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.221'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.25'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.106'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.201'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.161.64.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.154'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.243'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.166.152.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.173.82'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.86'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.73'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.184.165'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.28'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.118.101'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.232'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.202.99.24'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.138.114'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.248'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.50'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.96'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.70'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.145'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.235.49'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.68'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.45'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.40'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.167.104.150'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.125'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.17.114'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.183.40'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.76.239'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.28'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.252'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.111.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.32'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.72.19'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.14'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.208.174'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.201'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.102'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.26'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.27'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.32'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.145'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '163.177.68.203'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.39.81.32'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.140'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.96.15'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.139'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.75'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.10.172'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.32.168'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.252'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.15'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.78'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.221'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.79'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.149'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.222.53'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.140.19'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.222.56'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.102'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.183.16'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.89'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.25'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.93'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.151'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.148'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.188'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.149'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.11.101'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.62'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.247'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.129.8.150'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.24'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.108.98'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.59'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.227.169.159'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.47'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.76.166'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.139'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.100'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.46'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.16'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.139'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.217'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.107'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.206.25.166'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.206.15.21'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.93'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '140.207.128.115'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.167.104.150'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.129.8.149'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.152'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.96.142'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.92'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.161'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.148'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.161.64.125'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.36'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.223'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.44'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.149'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.22'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.247.171'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.147'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.207'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.22'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.196'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.188'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.10.172'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '222.180.167.22'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.253.107'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.173.76'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.45.47'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.96.144'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.39'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.18'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.39.81.93'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.148'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.26.36'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.125.9.16'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.40'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.40'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.36'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '157.255.174.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.232.162'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.39.81.93'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.89'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.21'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.41'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.32'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.97'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.179'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.112'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.238'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.96.226'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.77'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.180'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.144'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.235.147'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.169'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.79'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.242'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.250.136.49'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.86'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.107.147'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.46'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.45.47'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.48'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.238'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.139'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '222.180.167.18'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.33'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.125.110.22'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.37'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.34'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.37'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.36'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.119'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '140.207.54.47'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.93'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '153.3.222.106'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.232'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.59'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.89'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.167.86.106'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.77'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.32'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.38'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.17.125.89'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.80.102'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.167.104.140'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.89'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.222.55'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.23'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.31'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.119'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.192.199.147'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.237'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '153.3.221.16'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.206.164'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.122.177'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.42'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.206.15.44'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.157'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.167.104.149'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.50'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.91.62.231'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.161.64.105'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.44'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.18'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.62'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.209'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.184.166'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.151'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.201'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.161.121.7'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.167.104.147'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.161.64.109'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.101'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.125'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.33'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.39.81.93'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.119'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.226.57'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.251.80.140'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.29'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.16'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.145'
+	option dest_port '8080'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.73'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.32'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.125.110.12'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.27'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.25'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.87'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.207'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '121.29.28.169'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.194.123.25'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.209.106'
+	option dest_port '80'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.124'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '125.39.132.47'
+	option dest_port '443'
+
+#
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '111.206.15.20'
+	option dest_port '443'
+
+config rule
+	option src 'lan'
+	option dest 'wan'
+	option target 'REJECT'
+
+config defaults
+	option syn_flood '1'
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'REJECT'
+
+config zone
+	option name 'lan'
+	list network 'lan'
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'ACCEPT'
+
+config zone
+	option name 'wan'
+	list network 'wan'
+	option input 'REJECT'
+	option output 'REJECT'
+	option forward 'REJECT'
+	option masq '1'
+	option mtu_fix '1'
+
+config forwarding
+	option src 'lan'
+	option dest 'wan'
+
+config include 'firewalluser'
+	option path '/etc/firewall.user'
+	option reload '1'

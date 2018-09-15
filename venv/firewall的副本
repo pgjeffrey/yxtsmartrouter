@@ -1,0 +1,1966 @@
+
+#ver 2018-08-29 17:44:33
+#rule count 215
+
+config rule
+	option name 'Allow-DHCP-Renew'
+	option src 'wan'
+	option proto 'udp'
+	option dest_port '68'
+	option target 'ACCEPT'
+	option family 'ipv4'
+
+config rule
+	option name 'Allow-Ping'
+	option src 'wan'
+	option proto 'icmp'
+	option icmp_type 'echo-request'
+	option family 'ipv4'
+	option target 'ACCEPT'
+
+config rule
+	option target 'ACCEPT'
+    option src 'lan'
+	option dest 'wan'
+	option name 'allow dns'
+	option dest_port '53'
+
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow yxt'
+	option proto 'tcp'
+	option dest_ip '202.108.133.234'
+	
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wxpro'
+	option proto 'tcp'
+	option dest_ip '192.168.0.1'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.179'
+	option dest_port '80'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.11.101'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.30'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.27'
+	option dest_port '443'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.173.76'
+	option dest_port '8080'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.139'
+	option dest_port '443'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.183.16'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.33'
+	option dest_port '80'
+
+#四川省成都市 深圳市腾讯计算机系统有限公司电信节点
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.174.219'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.125'
+	option dest_port '8080'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.56.150.221'
+	option dest_port '443'
+
+#天津市 腾讯计算机系统电信节点
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.10.172'
+	option dest_port '8080'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.29'
+	option dest_port '80'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.184.166'
+	option dest_port '8080'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.37'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.106'
+	option dest_port '443'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.235.163'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.203'
+	option dest_port '8080'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.207'
+	option dest_port '80'
+
+#上海市 移动
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.192.199.147'
+	option dest_port '80'
+
+#新疆乌鲁木齐市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '220.171.124.105'
+	option dest_port '80'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.207'
+	option dest_port '8080'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.139'
+	option dest_port '80'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.184.165'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.28'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.74'
+	option dest_port '443'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.17.57.189'
+	option dest_port '80'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.202.101'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.12'
+	option dest_port '80'
+
+#广东省 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.97.86'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.100'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.17.42.105'
+	option dest_port '80'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.232.103'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.102'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.43'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.119'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.36'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.45'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.125'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.42'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.74'
+	option dest_port '8080'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.56.150.221'
+	option dest_port '80'
+
+#天津市 电信IDC机房
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.79.102'
+	option dest_port '443'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.28'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.44'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.101'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.24'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.226.83'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.41'
+	option dest_port '80'
+
+#广东省深圳市 深圳腾讯计算机系统有限公司电信节点
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.61.49.200'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.34'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.102'
+	option dest_port '443'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.39'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.27'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.27'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.224.41'
+	option dest_port '443'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.147.83.60'
+	option dest_port '443'
+
+#广东省深圳市 深圳市腾讯计算机系统有限公司电信节点
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.96.15'
+	option dest_port '80'
+
+#上海市 联通
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.139'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.105'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.33'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.42'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.17.117'
+	option dest_port '8080'
+
+#广东省深圳市 深圳市腾讯计算机系统有限公司电信节点(BGP)
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.254.99.144'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.140'
+	option dest_port '80'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.202.105'
+	option dest_port '443'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.208.174'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.173.76'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.179'
+	option dest_port '8080'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.140.19'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.102'
+	option dest_port '443'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.26'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.105'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.26'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.105'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.150'
+	option dest_port '80'
+
+#天津市 电信IDC机房
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.92.114'
+	option dest_port '443'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.32'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.150'
+	option dest_port '8080'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.184.165'
+	option dest_port '8080'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.11.101'
+	option dest_port '443'
+
+#天津市 腾讯计算机系统电信节点
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '123.151.10.172'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.101'
+	option dest_port '8080'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.203'
+	option dest_port '443'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.226.86'
+	option dest_port '80'
+
+#湖南省长沙市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.39'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.227.169.159'
+	option dest_port '80'
+
+#湖南省长沙市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.39'
+	option dest_port '8080'
+
+#四川省成都市 深圳市腾讯计算机系统有限公司电信节点
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.174.218'
+	option dest_port '80'
+
+#广东省深圳市 深圳市腾讯计算机系统有限公司电信节点
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.96.155'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.46'
+	option dest_port '80'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.22.184'
+	option dest_port '443'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.61.38.218'
+	option dest_port '80'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.139'
+	option dest_port '443'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.27'
+	option dest_port '8080'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.38'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.105'
+	option dest_port '443'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.106'
+	option dest_port '443'
+
+#广东省深圳市 深圳市腾讯计算机系统有限公司电信节点
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.96.142'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.106'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.235.119'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.161'
+	option dest_port '80'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.148'
+	option dest_port '8080'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.146'
+	option dest_port '443'
+
+#广东省深圳市 深圳市腾讯计算机系统有限公司电信节点(BGP)
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.254.21.82'
+	option dest_port '8080'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.232.104'
+	option dest_port '80'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.208.174'
+	option dest_port '443'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.18'
+	option dest_port '8080'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.226.57'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.226.82'
+	option dest_port '80'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.232.173'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.173.76'
+	option dest_port '443'
+
+#上海市 移动
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '120.204.0.149'
+	option dest_port '80'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.18'
+	option dest_port '443'
+
+#上海市 联通
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '58.247.204.148'
+	option dest_port '8080'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.101'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.29'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.31'
+	option dest_port '80'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.232.162'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.203'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.40'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.106'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.61.46.199'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.46'
+	option dest_port '8080'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.148'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.179'
+	option dest_port '443'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.112'
+	option dest_port '80'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.184.165'
+	option dest_port '443'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.235.147'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.101'
+	option dest_port '443'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.45'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.106'
+	option dest_port '8080'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.233.160'
+	option dest_port '80'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.202.105'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.224.41'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.139'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.89'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.17.117'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.37'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.34'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.150'
+	option dest_port '443'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.89'
+	option dest_port '443'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.208.174'
+	option dest_port '8080'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.230.18'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.106'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.147'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.105'
+	option dest_port '443'
+
+#广东省深圳市 烟台帝思普网络科技有限公司电信节点
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.116.65'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.221'
+	option dest_port '80'
+
+#香港 腾讯公司数据中心
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '203.205.129.102'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.89.15.100'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '61.151.183.16'
+	option dest_port '443'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.209.100'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.141'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.46'
+	option dest_port '443'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.184.166'
+	option dest_port '443'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.89'
+	option dest_port '8080'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.149'
+	option dest_port '8080'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.101'
+	option dest_port '80'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.139'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.18.245.196'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.41'
+	option dest_port '80'
+
+#湖南省长沙市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.39'
+	option dest_port '443'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.158.119'
+	option dest_port '8080'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.140'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.39'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.253.34'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.38'
+	option dest_port '80'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.150.10.161'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.43'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '119.147.83.60'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.226.85'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.226.84'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.215.138.114'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.253.34'
+	option dest_port '8080'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.27'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.17.117'
+	option dest_port '443'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.184.166'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.36'
+	option dest_port '80'
+
+#香港 腾讯公司数据中心
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '203.205.129.102'
+	option dest_port '443'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '118.112.22.184'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.35'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.235.104'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.17.42.45'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.44'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.10.23'
+	option dest_port '80'
+
+#广东省深圳市 深圳市腾讯计算机系统有限公司电信节点
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '59.37.96.126'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.18.245.245'
+	option dest_port '80'
+
+#上海市 联通
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '223.167.104.147'
+	option dest_port '80'
+
+#上海市 移动
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '120.204.0.139'
+	option dest_port '8080'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.226.101'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.117.125'
+	option dest_port '443'
+
+#广东省广州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '113.96.232.163'
+	option dest_port '80'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.224.144'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.105'
+	option dest_port '8080'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.253.34'
+	option dest_port '443'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.226.211.106'
+	option dest_port '8080'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '14.18.245.167'
+	option dest_port '80'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.163.25.149'
+	option dest_port '443'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.16'
+	option dest_port '80'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.188.148'
+	option dest_port '443'
+
+#湖南省长沙市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.31'
+	option dest_port '443'
+
+#湖南省长沙市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.31'
+	option dest_port '8080'
+
+#湖南省长沙市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '175.6.44.31'
+	option dest_port '80'
+
+#江苏省苏州市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '180.97.8.31'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.74'
+	option dest_port '80'
+
+#重庆市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.66.106.35'
+	option dest_port '80'
+
+#四川省成都市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '182.140.178.207'
+	option dest_port '443'
+
+#上海市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '101.227.169.159'
+	option dest_port '443'
+
+#广东省深圳市 电信
+config rule
+	option target 'ACCEPT'
+	option dest 'wan'
+	option name 'allow wx'
+	option proto 'tcp'
+	option dest_ip '183.3.234.102'
+	option dest_port '80'
+
+config rule
+	option src 'lan'
+	option dest 'wan'
+	option target 'REJECT'
+
+config defaults
+	option syn_flood '1'
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'REJECT'
+
+config zone
+	option name 'lan'
+	list network 'lan'
+	option input 'ACCEPT'
+	option output 'ACCEPT'
+	option forward 'ACCEPT'
+
+config zone
+	option name 'wan'
+	list network 'wan'
+	option input 'REJECT'
+	option output 'REJECT'
+	option forward 'REJECT'
+	option masq '1'
+	option mtu_fix '1'
+
+config forwarding
+	option src 'lan'
+	option dest 'wan'
+
+config include 'firewalluser'
+	option path '/etc/firewall.user'
+	option reload '1'
