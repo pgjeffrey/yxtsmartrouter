@@ -90,7 +90,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         if sys.argv[1] == "-debug":
             ISDEBUG = True
-            firewall_file = "firewall"\
+            firewall_file = "firewall"
             yxt_config_path = "routerconfig.ini"
             firewall_gzfile = ""
     nic = "eth0"
