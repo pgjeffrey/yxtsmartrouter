@@ -102,61 +102,6 @@ proxy_logfile = "/tmp/proxy_loop.log"
 tmp_firewall_file = "/tmp/firewall"
 
 
-def isip(str):
-    '''
-    正则匹配方法
-    判断一个字符串是否是合法IP地址
-    '''
-    compile_ip = re.compile('^((25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}(25[0-5]|2[0-4]\d|[01]?\d\d?)$')
-    if compile_ip.match(str):
-        return True
-    else:
-        return False
-
-
-def readProxyLogIPList(filepath):
-    with open(filepath, 'r') as f:
-        fr = f.read()
-    it = re.findall(r".*ERROR \[w\](.+?):(.+)", fr)
-    ipportlist = []
-    for match in it:
-        ip = match[0]
-        port = match[1]
-        if isip(ip) & port.isdigit():
-            ipportlist.append("%s:%d" % (ip, int(port)))
-    return ipportlist
-
-
-def weiChatIPfilter(ipandport):
-    wxiplist = []
-    for i in range(len(ipandport)):
-        ip = ipandport[i].split(':')[0]
-        port = ipandport[i].split(':')[1]
-
-        #ip 已经在备选列表中，不进行选择，继续下一个
-        if ip in wxiplist:
-            i += 1
-            continue
-
-#        ip 进行备选比较，从下面6个ipport中，找端口满足80，8080，443的
-        tmp_port = [port]
-        #冗余范围,冗余范围不能小于3
-        filterlen = 6
-        endindex = len(ipandport) if i + filterlen > len(ipandport) else i + filterlen
-        for j in range(i + 1, endindex):
-            nextip = ipandport[j].split(':')[0]
-            nextport = ipandport[j].split(':')[1]
-            if ip == nextip:
-                if (int(nextport) in [80, 8080, 443]) and (not (nextport in tmp_port)):
-                    tmp_port.append(nextport)
-                if len(set(tmp_port)) == 3:
-                    wxiplist.append(ip)
-                    break
-            j += 1
-        i += 1
-    return wxiplist
-
-
 def readFirewallIplist(filepath):
     if not os.path.exists(filepath):
         return []
@@ -188,6 +133,7 @@ def writeend(filepath):
     with open(filepath, 'a') as f:
         f.write(END.encode('utf-8'))
 
+
 def un_tar(tar_path, target_path):
     try:
         tar = tarfile.open(tar_path, "r:gz")
@@ -197,6 +143,7 @@ def un_tar(tar_path, target_path):
         tar.close()
     except Exception, e:
         raise Exception, e
+
 
 def de_tar(filepath):
     tar = tarfile.open(filepath + ".gz", "w:gz")
@@ -230,7 +177,6 @@ if __name__ == "__main__":
             pathr = os.path.dirname(f) + ("/untmp/%s" % os.path.basename(f))
             un_tar(f, pathr)
             iplist += readFirewallIplist(pathr + "/etc/config/firewall")
-
 
         new_firewall = list(set(iplist))
 

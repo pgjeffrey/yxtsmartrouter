@@ -210,7 +210,7 @@ if __name__ == "__main__":
         for ips in wxipportlist:
             print ips
     print "firewall len:%d, wxipportlist len:%d, new_firewall len:%d" % (len(firewall_iplist), len(wxipportlist), len(new_firewall))
-    if len(new_firewall) - len(firewall_iplist) >= 3 * 3:
+    if len(new_firewall) - len(firewall_iplist) >= 1 * 3:
         writehead(tmp_firewall_file, len(new_firewall) + 5)
         for ips in new_firewall:
             ip = ips.split(':')[0]
