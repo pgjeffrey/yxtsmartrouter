@@ -11,9 +11,9 @@ import urllib2
 import re
 
 ISDEBUG = False
-firewall_file = "/etc/config/firewall"
-yxt_config_path = "/etc/yxt/routerconfig.ini"
-firewall_gzfile = "/tmp/"
+#firewall_file = "/etc/config/firewall"
+#yxt_config_path = "/etc/yxt/routerconfig.ini"
+#gzfile = "/tmp/"
 
 class MultiPartForm():
     def __init__(self):
@@ -85,30 +85,28 @@ def load_yxt_config_ini(path):
 
     return hb_time, odr_time, at_time, svr_url, ver_code, on_time, retry_time
 
-if __name__ == "__main__":
-
-    if len(sys.argv) > 1:
-        if sys.argv[1] == "-debug":
-            ISDEBUG = True
-            firewall_file = "firewall"
-            yxt_config_path = "routerconfig.ini"
-            firewall_gzfile = ""
+def uploadfile(source_file, object_path, ini_file):
     nic = "eth0"
-    devid, mac = get_dev_id_mac(nic)
+    devid, _ = get_dev_id_mac(nic)
 
     if ISDEBUG:
         devid = "00e04c6b7140"
 
-    uploadfirename = devid + "_firewall.tar.gz"
-    firewall_gzfile += uploadfirename
-    cmd = "tar -zcf %s %s" % (firewall_gzfile, firewall_file)
+    objectfile = object_path
+
+    filenames = source_file.split('/')
+    filename = filenames[len(filenames) - 1]
+    uploadfirename = "%s_%s.tar.gz" % (devid, filename)
+    objectfile += uploadfirename
+    cmd = "tar -zcf %s %s" % (objectfile, source_file)
+    print cmd
     os.system(cmd)
 
-    hb_time, order_time, at_time, server_url, ver_code, on_time, retry_time = load_yxt_config_ini(yxt_config_path)
+    _, _, _, server_url, _, _, _ = load_yxt_config_ini(ini_file)
     uploadurl = "http://%s/router/file/upload" % re.match("http://(.*?)/", server_url, flags=0).group(1)
-    #uploadurl = "http://wifi.jzlkbj.com:8182/router/file/upload"
+    # uploadurl = "http://wifi.jzlkbj.com:8182/router/file/upload"
     form = MultiPartForm()
-    form.add_file('fileContent', uploadfirename, file_obj=open(firewall_gzfile))
+    form.add_file('fileContent', uploadfirename, file_obj=open(objectfile))
     request = urllib2.Request(uploadurl)
     body = str(form)
     request.add_header('Content-type', 'multipart/form-data; boundary=%s' % form.boundary)
@@ -117,4 +115,23 @@ if __name__ == "__main__":
     request.add_data(body)
 
     print(urllib2.urlopen(request).read())
-    print "uploaded."
+    print filename + " uploaded."
+
+if __name__ == "__main__":
+
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "-debug":
+            ISDEBUG = True
+            firewall_file = "firewall"
+            mainthdlog_file = "mainthd.log"
+            yxt_config_path = "routerconfig.ini"
+            objectpath = ""
+    else:
+        firewall_file = "/etc/config/firewall"
+        mainthdlog_file = "/tmp/mainthd.log"
+        objectpath = "/tmp/"
+        yxt_config_path = "/etc/yxt/routerconfig.ini"
+
+    uploadfile(firewall_file, objectpath, yxt_config_path)
+    uploadfile(mainthdlog_file, objectpath, yxt_config_path)
+
