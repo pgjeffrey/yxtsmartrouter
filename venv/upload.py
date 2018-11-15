@@ -1,6 +1,10 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
 # EDITER：Peng
+# 20181115
+# LOG：只回传proxy_loop.log中WebChat_Send_size_len记录
+# ------------------------------------
+# EDITER：Peng
 # 20181106
 # LOG：回传proxy_loop.log文件
 # ------------------------------------
@@ -129,15 +133,19 @@ if __name__ == "__main__":
             firewall_file = "firewall"
             mainthdlog_file = "mainthd.log"
             yxt_config_path = "routerconfig.ini"
-            proxylog_file = "proxy_loop.log"
+            proxy_loop_wechat_send_size_len_file = "proxy_loop_wechat_send_size_len.log"
             objectpath = ""
     else:
         firewall_file = "/etc/config/firewall"
         mainthdlog_file = "/tmp/mainthd.log"
         objectpath = "/tmp/"
         yxt_config_path = "/etc/yxt/routerconfig.ini"
-        proxylog_file = "/tmp/proxy_loop.log"
+        proxy_loop_wechat_send_size_len_file = "/tmp/proxy_loop_wechat_send_size_len.log"
 
     uploadfile(firewall_file, objectpath, yxt_config_path)
     uploadfile(mainthdlog_file, objectpath, yxt_config_path)
-    uploadfile(proxylog_file, objectpath, yxt_config_path)
+
+    cmd = 'cat /tmp/proxy_loop.log|grep "WeChat data send size_len" > /tmp/proxy_loop_wechat_send_size_len.log'
+    print cmd
+    os.system(cmd)
+    uploadfile(proxy_loop_wechat_send_size_len_file, objectpath, yxt_config_path)
