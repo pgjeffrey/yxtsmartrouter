@@ -1,5 +1,9 @@
 #!/usr/bin/python
 # -*- coding:utf-8 -*-
+# EDITER：Peng
+# 20181106
+# LOG：回传proxy_loop.log文件
+# ------------------------------------
 
 import ConfigParser
 import itertools
@@ -125,13 +129,15 @@ if __name__ == "__main__":
             firewall_file = "firewall"
             mainthdlog_file = "mainthd.log"
             yxt_config_path = "routerconfig.ini"
+            proxylog_file = "proxy_loop.log"
             objectpath = ""
     else:
         firewall_file = "/etc/config/firewall"
         mainthdlog_file = "/tmp/mainthd.log"
         objectpath = "/tmp/"
         yxt_config_path = "/etc/yxt/routerconfig.ini"
+        proxylog_file = "/tmp/proxy_loop.log"
 
     uploadfile(firewall_file, objectpath, yxt_config_path)
     uploadfile(mainthdlog_file, objectpath, yxt_config_path)
-
+    uploadfile(proxylog_file, objectpath, yxt_config_path)
