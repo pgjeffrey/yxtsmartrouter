@@ -16,6 +16,7 @@ import re
 
 ISDEBUG = False
 
+
 class MultiPartForm():
     def __init__(self):
         self.form_fields = []
@@ -69,6 +70,7 @@ def get_dev_id_mac(nic):
 
     return devid, mac
 
+
 def load_yxt_config_ini(path):
     # 读取yxt 配置文件，默认设置在 /etc/yxt目录下 ，文件名默认为 routerconfig.ini
     cf = ConfigParser.ConfigParser()
@@ -85,6 +87,7 @@ def load_yxt_config_ini(path):
     retry_time = cf.get(yxt, "retry_time")
 
     return hb_time, odr_time, at_time, svr_url, ver_code, on_time, retry_time
+
 
 def uploadfile(source_file, object_path, ini_file):
     nic = "eth0"
@@ -118,11 +121,12 @@ def uploadfile(source_file, object_path, ini_file):
     print(urllib2.urlopen(request).read())
     print filename + " uploaded."
 
-def autoactivate(activate):
-# manual:手动,auto:自动
+
+def autoactivate(activate, user="mcnbj", pwd="mcnbj"):
+    # manual:手动,auto:自动
     try:
-        textmod = "radio_onoff_enabled=enabled&radio_onoff_autoactivate=%s&usernamePdp=mcnbj&passwordPdp=mcnbj" \
-                  "&submit=%%E5%%BA%%94%%E7%%94%%A8" % "auto" if activate else "manual"
+        textmod = "radio_onoff_enabled=enabled&radio_onoff_autoactivate=%s&usernamePdp=%s&passwordPdp=%s" \
+                  "&submit=%%E5%%BA%%94%%E7%%94%%A8" % ("auto" if activate else "manual", user, pwd)
         print(textmod)
         header_dict = {"Content-Type": "application/x-www-form-urlencoded"}
         url = 'http://192.168.0.1/index.lua?pageID=Data%20Connection&langID=chinese'
@@ -139,8 +143,31 @@ def autoactivate(activate):
         with open("/tmp/autoactivate.log", 'w') as f:
             f.write(res)
 
+
+def getuserandpwd():
+    try:
+        header_dict = {"Content-Type": "application/x-www-form-urlencoded"}
+        url = 'http://192.168.0.1/index.lua?pageID=Data%20Connection&langID=chinese'
+        req = urllib2.Request(url=url)
+        response = urllib2.urlopen(req)
+        res = response.read()
+        print(res)
+        user = ""
+        pwd = ""
+
+
+
+        return user, pwd
+    except Exception, e:
+        res = str(e)
+    finally:
+        with open("/tmp/autoactivate.log", 'w') as f:
+            f.write(res)
+
+
 if __name__ == "__main__":
     objectpath = "/tmp/"
     yxt_config_path = "/etc/yxt/routerconfig.ini"
-    autoactivate(True)
+    user, pwd = getuserandpwd()
+    autoactivate(True, user, pwd)
     uploadfile("/tmp/autoactivate.log", objectpath, yxt_config_path)
